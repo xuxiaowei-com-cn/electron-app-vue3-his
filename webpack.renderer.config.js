@@ -1,6 +1,6 @@
 const { VueLoaderPlugin } = require('vue-loader');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer'); // 依赖分析
 const rules = require('./webpack.rules');
 
 rules.push({
@@ -16,7 +16,7 @@ module.exports = {
   plugins: [
     // https://vue-loader.vuejs.org/guide/#manual-setup
     new VueLoaderPlugin(),
-    new BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin(), // 依赖分析
     new CopyWebpackPlugin({
       patterns: [
         {

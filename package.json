@@ -90,8 +90,7 @@
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
     "vue-loader": "^16.0.0-beta.8",
-    "vue-template-compiler": "^2.6.12",
-    "webpack-bundle-analyzer": "^3.9.0"
+    "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
     "ant-design-vue": "^2.0.0-beta.10",
