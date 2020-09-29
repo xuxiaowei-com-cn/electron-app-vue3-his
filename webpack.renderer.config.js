@@ -41,7 +41,7 @@ module.exports = {
           entry: 'bin/jsencrypt.min.js',
         },
       ],
-      outputPath: 'assets',
+      outputPath: `${process.env.NODE_ENV === 'development' ? '' : '/main_window/'}assets`,
     }),
     // new BundleAnalyzerPlugin(), // 依赖分析
     new CopyWebpackPlugin({
