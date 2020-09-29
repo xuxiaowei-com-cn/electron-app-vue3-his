@@ -53,3 +53,12 @@ npm i -D @vue/cli-plugin-vuex
 ~~~
 npm i vant
 ~~~
+
+## sass-loader
+- [sass-loader](https://developer.aliyun.com/mirror/npm/package/sass-loader)
+- [sass中文文档](https://www.sass.hk/docs/)
+- [CSS转Sass](https://www.sass.hk/css2sass/)
+~~~
+npm i -D sass-loader
+npm i -D node-sass
+~~~

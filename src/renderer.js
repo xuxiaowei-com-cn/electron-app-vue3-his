@@ -25,8 +25,9 @@
  *  });
  * ```
  */
-
-import './index.css';
+import './css/style.sass';
+import './css/style.scss';
+import './css/index.css';
 import 'vant/lib/index.css';
 
 import { createApp } from 'vue';
