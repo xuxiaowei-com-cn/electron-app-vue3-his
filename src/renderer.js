@@ -28,9 +28,10 @@
 
 import './index.css';
 
+import { createApp } from 'vue';
+import App from './App.vue';
+
+// eslint-disable-next-line no-console
 console.log('👋 This message is being logged by "renderer.js", included via webpack');
 
-import { createApp } from 'vue'
-import App from './App.vue'
-
-createApp(App).mount('#app')
+createApp(App).mount('#app');

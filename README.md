@@ -20,3 +20,14 @@ npm i -D vue-template-compiler
 npm i -D copy-webpack-plugin
 npm i -D @vue/compiler-sfc
 ~~~
+
+## eslint
+- [eslint-config-airbnb](https://developer.aliyun.com/mirror/npm/package/eslint-config-airbnb)
+- [import/no-extraneous-dependencies](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md)
+~~~
+npm i -D eslint
+npm i -D eslint-config-airbnb
+npm i -D eslint-plugin-jsx-a11y
+npm i -D eslint-plugin-react
+npm i -D eslint-plugin-import
+~~~
