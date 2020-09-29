@@ -39,3 +39,11 @@ npm i -D eslint-plugin-import
 npm i vue-router
 npm i -D @vue/cli-plugin-router
 ~~~
+
+## vuex
+- [vuex installation](https://vuex.vuejs.org/zh/installation.html)
+- [vuex](https://developer.aliyun.com/mirror/npm/package/vuex)
+~~~
+npm i vuex
+npm i -D @vue/cli-plugin-vuex
+~~~
