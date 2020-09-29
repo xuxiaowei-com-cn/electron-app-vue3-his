@@ -92,3 +92,9 @@ npm i ant-design-vue
 ~~~
 npm i -D webpack-bundle-analyzer
 ~~~
+
+## mini-css-extract-plugin
+- [mini-css-extract-plugin](https://developer.aliyun.com/mirror/npm/package/mini-css-extract-plugin)
+~~~
+npm i -D mini-css-extract-plugin
+~~~
