@@ -1,5 +1,6 @@
 import Vant from '../../views/demo/vant.vue';
 import Rsa from '../../views/demo/rsa.vue';
+import CryptoJS from '../../views/demo/cryptojs.vue';
 
 const demoVant = {
   path: '/demo/vant',
@@ -13,7 +14,14 @@ const demoRsa = {
   component: Rsa,
 };
 
+const demoCryptoJS = {
+  path: '/demo/cryptojs',
+  name: 'CryptoJS',
+  component: CryptoJS,
+};
+
 export {
   demoVant,
   demoRsa,
+  demoCryptoJS,
 };

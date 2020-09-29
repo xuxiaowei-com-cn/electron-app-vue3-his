@@ -74,3 +74,9 @@ npm i electron-log
 ~~~
 npm i jsencrypt
 ~~~
+
+## crypto-js
+- [crypto-js](https://developer.aliyun.com/mirror/npm/package/crypto-js)
+~~~
+npm i crypto-js
+~~~

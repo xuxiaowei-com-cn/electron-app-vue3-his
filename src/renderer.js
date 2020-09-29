@@ -32,6 +32,7 @@ import 'vant/lib/index.css';
 
 import { createApp } from 'vue';
 import Vant from 'vant';
+import CryptoJS from 'crypto-js';
 
 import App from './App.vue';
 
@@ -50,4 +51,5 @@ app.use(store);
 app.use(Vant);
 app.config.globalProperties.$userLog = userLog;
 app.config.globalProperties.$sysLog = sysLog;
+app.config.globalProperties.$CryptoJS = CryptoJS;
 app.mount('#app');

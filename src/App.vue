@@ -8,6 +8,8 @@
       <router-link to="/demo/vant">Vant</router-link>
       |
       <router-link to="/demo/rsa">RSA</router-link>
+      |
+      <router-link to="/demo/cryptojs">CryptoJS</router-link>
     </div>
     <router-view/>
   </div>
