@@ -2,13 +2,14 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 
 import homeRoutes from './home';
 import aboutRoutes from './about';
-import demoVant from './demo';
+import { demoVant, demoRsa } from './demo';
 import { userLog } from '../log';
 
 const routes = [
   homeRoutes,
   aboutRoutes,
   demoVant,
+  demoRsa,
 ];
 
 const router = createRouter({

@@ -68,3 +68,9 @@ npm i -D node-sass
 ~~~
 npm i electron-log
 ~~~
+
+## jsencrypt
+- [jsencrypt](https://github.com/travist/jsencrypt)
+~~~
+npm i jsencrypt
+~~~

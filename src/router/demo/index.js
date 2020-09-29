@@ -1,4 +1,5 @@
 import Vant from '../../views/demo/vant.vue';
+import Rsa from '../../views/demo/rsa.vue';
 
 const demoVant = {
   path: '/demo/vant',
@@ -6,4 +7,13 @@ const demoVant = {
   component: Vant,
 };
 
-export default demoVant;
+const demoRsa = {
+  path: '/demo/rsa',
+  name: 'Rsa',
+  component: Rsa,
+};
+
+export {
+  demoVant,
+  demoRsa,
+};
