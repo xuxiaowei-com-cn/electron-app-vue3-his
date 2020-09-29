@@ -1,4 +1,6 @@
 const rules = require('./webpack.rules');
+const { VueLoaderPlugin } = require('vue-loader');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 rules.push({
   test: /\.css$/,
@@ -10,4 +12,16 @@ module.exports = {
   module: {
     rules,
   },
+  plugins: [
+    // https://vue-loader.vuejs.org/guide/#manual-setup
+    new VueLoaderPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: `${__dirname}/src/assets`,
+          to: `${__dirname}/.webpack/renderer${process.env.NODE_ENV === 'development' ? '' : '/main_window'}/assets`,
+        },
+      ],
+    }),
+  ]
 };

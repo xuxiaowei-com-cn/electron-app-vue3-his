@@ -5,7 +5,7 @@
   "description": "My Electron application description",
   "main": ".webpack/main",
   "scripts": {
-    "start": "electron-forge start",
+    "start": "set NODE_ENV=development&& electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
@@ -70,12 +70,17 @@
     "@electron-forge/maker-zip": "^6.0.0-beta.53",
     "@electron-forge/plugin-webpack": "^6.0.0-beta.53",
     "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "copy-webpack-plugin": "^6.1.1",
     "css-loader": "^4.3.0",
     "electron": "10.1.2",
     "node-loader": "^1.0.1",
-    "style-loader": "^1.2.1"
+    "style-loader": "^1.2.1",
+    "vue-loader": "^16.0.0-beta.8",
+    "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "vue": "^3.0.0"
   }
 }

@@ -14,6 +14,13 @@ module.exports = [
       },
     },
   },
+  // https://vue-loader.vuejs.org/guide/#manual-setup
+  {
+    test: /\.vue$/,
+    use: {
+      loader: 'vue-loader',
+    },
+  },
   // Put your webpack loader rules in this array.  This is where you would put
   // your ts-loader configuration for instance:
   /**
