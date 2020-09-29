@@ -31,3 +31,11 @@ npm i -D eslint-plugin-jsx-a11y
 npm i -D eslint-plugin-react
 npm i -D eslint-plugin-import
 ~~~
+
+## vue-router
+- [vue-router zh](https://router.vuejs.org/zh/)
+- [vue-router](https://developer.aliyun.com/mirror/npm/package/vue-router)
+~~~
+npm i vue-router
+npm i -D @vue/cli-plugin-router
+~~~

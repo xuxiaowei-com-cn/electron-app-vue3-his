@@ -31,7 +31,11 @@ import './index.css';
 import { createApp } from 'vue';
 import App from './App.vue';
 
+import router from './router';
+
 // eslint-disable-next-line no-console
 console.log('👋 This message is being logged by "renderer.js", included via webpack');
 
-createApp(App).mount('#app');
+const app = createApp(App);
+app.use(router);
+app.mount('#app');
