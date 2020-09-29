@@ -1,13 +1,13 @@
 <template>
   <div id="demo-ant-design-vue">
     <h2>ant-design-vue</h2>
-      <a-button>Default</a-button>
+    <a-button>Default</a-button>
   </div>
 </template>
 
 <script>
 export default {
-name: "AntDesignVue"
+  name: "AntDesignVue"
 }
 </script>
 
