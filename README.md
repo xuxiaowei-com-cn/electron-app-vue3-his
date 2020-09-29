@@ -100,3 +100,9 @@ npm i -D mini-css-extract-plugin
 npm i -D terser-webpack-plugin
 npm i -D optimize-css-assets-webpack-plugin
 ~~~
+
+## html-webpack-externals-plugin
+- [html-webpack-externals-plugin](https://developer.aliyun.com/mirror/npm/package//html-webpack-externals-plugin)
+~~~
+npm i -D html-webpack-externals-plugin
+~~~
