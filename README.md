@@ -80,3 +80,9 @@ npm i jsencrypt
 ~~~
 npm i crypto-js
 ~~~
+
+## ant-design-vue
+- [Ant Design Vue](https://2x.antdv.com/docs/vue/introduce-cn/)
+~~~
+npm i ant-design-vue
+~~~

@@ -2,7 +2,9 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 
 import homeRoutes from './home';
 import aboutRoutes from './about';
-import { demoVant, demoRsa, demoCryptoJS } from './demo';
+import {
+  demoVant, demoRsa, demoCryptoJS, demoAntDesignVue,
+} from './demo';
 import { userLog } from '../log';
 
 const routes = [
@@ -11,6 +13,7 @@ const routes = [
   demoVant,
   demoRsa,
   demoCryptoJS,
+  demoAntDesignVue,
 ];
 
 const router = createRouter({
