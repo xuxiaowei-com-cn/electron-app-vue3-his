@@ -27,8 +27,11 @@
  */
 
 import './index.css';
+import 'vant/lib/index.css';
 
 import { createApp } from 'vue';
+import Vant from 'vant';
+
 import App from './App.vue';
 
 import router from './router';
@@ -40,4 +43,5 @@ console.log('👋 This message is being logged by "renderer.js", included via we
 const app = createApp(App);
 app.use(router);
 app.use(store);
+app.use(Vant);
 app.mount('#app');
