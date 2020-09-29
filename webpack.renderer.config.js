@@ -1,6 +1,6 @@
-const rules = require('./webpack.rules');
 const { VueLoaderPlugin } = require('vue-loader');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const rules = require('./webpack.rules');
 
 rules.push({
   test: /\.css$/,
@@ -23,5 +23,5 @@ module.exports = {
         },
       ],
     }),
-  ]
+  ],
 };
