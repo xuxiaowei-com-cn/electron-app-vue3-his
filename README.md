@@ -86,3 +86,9 @@ npm i crypto-js
 ~~~
 npm i ant-design-vue
 ~~~
+
+## webpack-bundle-analyzer
+- [webpack-bundle-analyzer](https://developer.aliyun.com/mirror/npm/package/webpack-bundle-analyzer)
+~~~
+npm i -D webpack-bundle-analyzer
+~~~
