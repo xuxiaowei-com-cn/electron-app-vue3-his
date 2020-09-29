@@ -97,4 +97,6 @@ npm i -D webpack-bundle-analyzer
 - [mini-css-extract-plugin](https://developer.aliyun.com/mirror/npm/package/mini-css-extract-plugin)
 ~~~
 npm i -D mini-css-extract-plugin
+npm i -D terser-webpack-plugin
+npm i -D optimize-css-assets-webpack-plugin
 ~~~

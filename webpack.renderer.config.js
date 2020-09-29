@@ -2,6 +2,8 @@ const { VueLoaderPlugin } = require('vue-loader');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 // const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer'); // 依赖分析
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserJSPlugin = require('terser-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const rules = require('./webpack.rules');
 
 rules.push({
@@ -18,10 +20,19 @@ module.exports = {
   module: {
     rules,
   },
+  optimization: {
+    minimizer: [
+      new TerserJSPlugin({}),
+      new OptimizeCSSAssetsPlugin({}),
+    ],
+  },
   plugins: [
     // https://vue-loader.vuejs.org/guide/#manual-setup
     new VueLoaderPlugin(),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    }),
     // new BundleAnalyzerPlugin(), // 依赖分析
     new CopyWebpackPlugin({
       patterns: [
