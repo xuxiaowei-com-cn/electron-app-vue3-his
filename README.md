@@ -62,3 +62,9 @@ npm i vant
 npm i -D sass-loader
 npm i -D node-sass
 ~~~
+
+## electron-log
+- [electron-log](https://developer.aliyun.com/mirror/npm/package/electron-log)
+~~~
+npm i electron-log
+~~~

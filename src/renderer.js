@@ -37,6 +37,7 @@ import App from './App.vue';
 
 import router from './router';
 import store from './store';
+import { sysLog, userLog } from './log';
 
 // eslint-disable-next-line no-console
 console.log('👋 This message is being logged by "renderer.js", included via webpack');
@@ -45,4 +46,6 @@ const app = createApp(App);
 app.use(router);
 app.use(store);
 app.use(Vant);
+app.config.globalProperties.$userLog = userLog;
+app.config.globalProperties.$sysLog = sysLog;
 app.mount('#app');
