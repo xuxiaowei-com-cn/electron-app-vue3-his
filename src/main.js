@@ -1,5 +1,6 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
+const { userLog } = require('./log');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -49,3 +50,13 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
+
+app.on('web-contents-created', (e, webContents) => {
+  webContents.on('certificate-error', (event, url, error, certificate, callback) => {
+    userLog.log('certificate-error event', e);
+    userLog.log('certificate-error url', url);
+    userLog.log('certificate-error error', error);
+    userLog.log('certificate-error certificate', certificate);
+    callback(true); // 跳过证书验证
+  });
+});
