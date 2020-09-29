@@ -50,6 +50,10 @@ module.exports = {
           from: `${__dirname}/src/assets`,
           to: `${__dirname}/.webpack/renderer${process.env.NODE_ENV === 'development' ? '' : '/main_window'}/assets`,
         },
+        {
+          from: `${__dirname}/LICENSE`,
+          to: `${__dirname}/.webpack/renderer`,
+        },
       ],
     }),
   ],
