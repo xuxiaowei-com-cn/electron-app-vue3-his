@@ -1,13 +1,6 @@
-import Vant from '../../views/demo/vant.vue';
 import Rsa from '../../views/demo/rsa.vue';
 import CryptoJS from '../../views/demo/cryptojs.vue';
 import AntDesignVue from '../../views/demo/ant-design-vue.vue';
-
-const demoVant = {
-  path: '/demo/vant',
-  name: 'Vant',
-  component: Vant,
-};
 
 const demoRsa = {
   path: '/demo/rsa',
@@ -28,7 +21,6 @@ const demoAntDesignVue = {
 };
 
 export {
-  demoVant,
   demoRsa,
   demoCryptoJS,
   demoAntDesignVue,

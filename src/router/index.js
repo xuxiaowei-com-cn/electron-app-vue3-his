@@ -3,14 +3,13 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 import homeRoutes from './home';
 import aboutRoutes from './about';
 import {
-  demoVant, demoRsa, demoCryptoJS, demoAntDesignVue,
+  demoRsa, demoCryptoJS, demoAntDesignVue,
 } from './demo';
 import { userLog } from '../log';
 
 const routes = [
   homeRoutes,
   aboutRoutes,
-  demoVant,
   demoRsa,
   demoCryptoJS,
   demoAntDesignVue,

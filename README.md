@@ -48,7 +48,7 @@ npm i vuex
 npm i -D @vue/cli-plugin-vuex
 ~~~
 
-## vant
+## vant（已禁用）
 - [vant next](https://vant-contrib.gitee.io/vant/next/#/zh-CN/)
 ~~~
 npm i vant

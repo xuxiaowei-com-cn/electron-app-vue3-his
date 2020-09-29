@@ -28,11 +28,9 @@
 import './css/style.sass';
 import './css/style.scss';
 import './css/index.css';
-import 'vant/lib/index.css';
 import 'ant-design-vue/dist/antd.css';
 
 import { createApp } from 'vue';
-import Vant from 'vant';
 import CryptoJS from 'crypto-js';
 import Antd from 'ant-design-vue';
 
@@ -50,7 +48,6 @@ console.log('👋 This message is being logged by "renderer.js", included via we
 const app = createApp(App);
 app.use(router);
 app.use(store);
-app.use(Vant);
 app.use(Antd);
 app.config.globalProperties.$userLog = userLog;
 app.config.globalProperties.$sysLog = sysLog;
