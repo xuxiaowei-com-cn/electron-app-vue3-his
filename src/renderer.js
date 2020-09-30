@@ -28,7 +28,6 @@
 import './css/style.sass';
 import './css/style.scss';
 import './css/index.css';
-import 'ant-design-vue/dist/antd.css';
 
 import { createApp } from 'vue';
 import CryptoJS from 'crypto-js';
