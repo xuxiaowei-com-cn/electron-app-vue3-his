@@ -7,6 +7,8 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 const rules = require('./webpack.rules');
 
+const path = `${__dirname}/.webpack/renderer/main_window/`;
+
 rules.push({
   test: /\.css$/,
   use: [
@@ -46,7 +48,7 @@ module.exports = {
           global: 'CryptoJS',
         },
       ],
-      outputPath: `${process.env.NODE_ENV === 'development' ? '' : '/main_window/'}assets`,
+      outputPath: `${process.env.NODE_ENV === 'development' ? '' : path}assets`,
     }),
     // new BundleAnalyzerPlugin(), // 依赖分析
     new CopyWebpackPlugin({
