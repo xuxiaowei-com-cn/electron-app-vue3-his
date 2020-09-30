@@ -8,7 +8,7 @@
 export default {
   name: "CryptoJS",
   created() {
-    console.log(this.$CryptoJS.MD5('徐晓伟').toString())
+    console.log(CryptoJS.MD5('徐晓伟').toString())
   }
 }
 </script>

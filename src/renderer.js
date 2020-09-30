@@ -30,7 +30,6 @@ import './css/style.scss';
 import './css/index.css';
 
 import { createApp } from 'vue';
-import CryptoJS from 'crypto-js';
 import Antd from 'ant-design-vue';
 
 import App from './App.vue';
@@ -48,5 +47,4 @@ app.use(store);
 app.use(Antd);
 app.config.globalProperties.$userLog = userLog;
 app.config.globalProperties.$sysLog = sysLog;
-app.config.globalProperties.$CryptoJS = CryptoJS;
 app.mount('#app');

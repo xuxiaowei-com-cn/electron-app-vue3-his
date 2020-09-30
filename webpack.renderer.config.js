@@ -40,6 +40,11 @@ module.exports = {
           module: 'jsencrypt',
           entry: 'bin/jsencrypt.min.js',
         },
+        {
+          module: 'crypto-js',
+          entry: 'crypto-js.js',
+          global: 'CryptoJS',
+        },
       ],
       outputPath: `${process.env.NODE_ENV === 'development' ? '' : '/main_window/'}assets`,
     }),
