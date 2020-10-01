@@ -30,7 +30,7 @@ import './css/style.scss';
 import './css/index.css';
 
 import { createApp } from 'vue';
-import Antd from 'ant-design-vue';
+import Antd from 'ant-design-vue/dist/antd.min';
 
 import App from './App.vue';
 
