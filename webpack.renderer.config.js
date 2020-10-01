@@ -20,6 +20,14 @@ module.exports = {
   module: {
     rules,
   },
+  /**
+   * 是否输出源码（控制除 main.js 代码）
+   * 只能为 string、false
+   * source-map：输出源码，用于调试，但源码文件较大
+   * none：不输出源码
+   * https://www.webpackjs.com/configuration/devtool/
+   */
+  devtool: 'source-map',
   optimization: {
     minimize: process.env.NODE_ENV !== 'development',
     minimizer: [
