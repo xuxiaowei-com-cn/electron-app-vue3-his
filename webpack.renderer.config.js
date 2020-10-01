@@ -4,10 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 const rules = require('./webpack.rules');
-
-const path = `${__dirname}/.webpack/renderer/main_window/`;
 
 rules.push({
   test: /\.css$/,
@@ -36,20 +33,6 @@ module.exports = {
       filename: '[name].css',
       chunkFilename: '[id].css',
     }),
-    new HtmlWebpackExternalsPlugin({
-      externals: [
-        {
-          module: 'jsencrypt',
-          entry: 'bin/jsencrypt.min.js',
-        },
-        {
-          module: 'crypto-js',
-          entry: 'crypto-js.js',
-          global: 'CryptoJS',
-        },
-      ],
-      outputPath: `${process.env.NODE_ENV === 'development' ? '' : path}assets`,
-    }),
     // new BundleAnalyzerPlugin(), // 依赖分析
     new CopyWebpackPlugin({
       patterns: [
@@ -60,6 +43,14 @@ module.exports = {
         {
           from: `${__dirname}/node_modules/ant-design-vue/dist/antd.min.css`,
           to: `${__dirname}/.webpack/renderer${process.env.NODE_ENV === 'development' ? '' : '/main_window'}/assets/css/antd.min.css`,
+        },
+        {
+          from: `${__dirname}/node_modules/jsencrypt/bin/jsencrypt.min.js`,
+          to: `${__dirname}/.webpack/renderer${process.env.NODE_ENV === 'development' ? '' : '/main_window'}/assets/js/jsencrypt/bin/jsencrypt.min.js`,
+        },
+        {
+          from: `${__dirname}/node_modules/crypto-js/crypto-js.js`,
+          to: `${__dirname}/.webpack/renderer${process.env.NODE_ENV === 'development' ? '' : '/main_window'}/assets/js/crypto-js/crypto-js.js`,
         },
         {
           from: `${__dirname}/LICENSE`,
