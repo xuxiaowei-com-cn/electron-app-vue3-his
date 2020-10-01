@@ -10,6 +10,8 @@
       <router-link to="/demo/cryptojs">CryptoJS</router-link>
       |
       <router-link to="/demo/ant-design-vue">AntDesignVue</router-link>
+      |
+      <router-link to="/demo/img">Img</router-link>
     </div>
     <router-view/>
   </div>

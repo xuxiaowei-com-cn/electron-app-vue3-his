@@ -3,7 +3,7 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 import homeRoutes from './home';
 import aboutRoutes from './about';
 import {
-  demoRsa, demoCryptoJS, demoAntDesignVue,
+  demoRsa, demoCryptoJS, demoAntDesignVue, demoImg,
 } from './demo';
 import { userLog } from '../log';
 
@@ -13,6 +13,7 @@ const routes = [
   demoRsa,
   demoCryptoJS,
   demoAntDesignVue,
+  demoImg,
 ];
 
 const router = createRouter({

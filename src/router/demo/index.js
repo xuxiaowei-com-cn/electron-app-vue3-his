@@ -1,6 +1,7 @@
 import Rsa from '../../views/demo/rsa.vue';
 import CryptoJS from '../../views/demo/cryptojs.vue';
 import AntDesignVue from '../../views/demo/ant-design-vue.vue';
+import Img from '../../views/demo/img.vue';
 
 const demoRsa = {
   path: '/demo/rsa',
@@ -20,8 +21,15 @@ const demoAntDesignVue = {
   component: AntDesignVue,
 };
 
+const demoImg = {
+  path: '/demo/img',
+  name: 'Img',
+  component: Img,
+};
+
 export {
   demoRsa,
   demoCryptoJS,
   demoAntDesignVue,
+  demoImg,
 };
