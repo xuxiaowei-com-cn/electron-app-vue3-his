@@ -34,6 +34,41 @@ module.exports = {
       new TerserJSPlugin({}),
       new OptimizeCSSAssetsPlugin({}),
     ],
+    splitChunks: { // https://www.webpackjs.com/plugins/split-chunks-plugin/#optimization-splitchunks
+      chunks: 'async',
+      minSize: 30000, // （默认值：30000）块的最小大小。
+      maxSize: process.env.NODE_ENV === 'development' ? 0 : 1024 * 1024, // 块的最大大小。
+      minChunks: 1, // （默认值：1）在拆分之前共享模块的最小块数
+      maxAsyncRequests: 10, // （默认为5）按需加载时并行请求的最大数量
+      maxInitialRequests: 6, // （默认值为3）入口点的最大并行请求数
+      automaticNameDelimiter: '~',
+      name: true,
+      cacheGroups: {
+        vue: {
+          test: /[\\/]node_modules[\\/]vue/, // vue、vuex、vue-router
+          priority: -10,
+          name: 'vue',
+          chunks: 'all',
+        },
+        'ant-design-vue': {
+          test: /[\\/]node_modules[\\/]ant-design-vue/,
+          priority: -11,
+          name: 'ant-design-vue',
+          chunks: 'all',
+        },
+        'electron-log': {
+          test: /[\\/]node_modules[\\/]electron-log/,
+          priority: -12,
+          name: 'electron-log',
+          chunks: 'all',
+        },
+        default: {
+          minChunks: 2,
+          priority: -200,
+          reuseExistingChunk: true,
+        },
+      },
+    },
   },
   plugins: [
     // https://vue-loader.vuejs.org/guide/#manual-setup
