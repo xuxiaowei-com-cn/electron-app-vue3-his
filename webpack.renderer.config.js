@@ -21,6 +21,7 @@ module.exports = {
     rules,
   },
   optimization: {
+    minimize: process.env.NODE_ENV !== 'development',
     minimizer: [
       new TerserJSPlugin({}),
       new OptimizeCSSAssetsPlugin({}),
