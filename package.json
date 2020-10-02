@@ -5,7 +5,7 @@
   "description": "一个基于 Electron、Vue 3 的 HIS 项目",
   "main": ".webpack/main",
   "scripts": {
-    "start": "set NODE_ENV=development&& electron-forge start",
+    "start": "set NODE_ENV=development&& chcp 65001 && electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
