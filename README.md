@@ -83,8 +83,10 @@ npm i crypto-js
 
 ## ant-design-vue
 - [Ant Design Vue](https://2x.antdv.com/docs/vue/introduce-cn/)
+- [Ant Design Vue 图标 Icon](https://2x.antdv.com/components/icon-cn/#API)
 ~~~
 npm i ant-design-vue
+npm i -D @ant-design/icons-vue
 ~~~
 
 ## webpack-bundle-analyzer（已禁用）
