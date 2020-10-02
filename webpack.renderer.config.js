@@ -85,7 +85,7 @@ module.exports = {
           to: `${__dirname}/.webpack/renderer${process.env.NODE_ENV === 'development' ? '' : '/main_window'}/assets`,
         },
         {
-          from: `${__dirname}/node_modules/ant-design-vue/dist/antd.min.css`,
+          from: `${__dirname}/node_modules/ant-design-vue/dist/antd${process.env.NODE_ENV === 'development' ? '' : '.min'}.css`,
           to: `${__dirname}/.webpack/renderer${process.env.NODE_ENV === 'development' ? '' : '/main_window'}/assets/css/antd.min.css`,
         },
         {
